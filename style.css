@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --space-sm: 1rem;
+    /* 16px */
+    --space-md: 1.5rem;
+    /* 24px */
+    --space-lg: 2.5rem;
+    /* 40px */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -16,33 +25,30 @@ body {
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    width: 320px;
-    height: 500px;
-    padding: 16px;
-    position: absolute;
+    width: 100%;
+    max-width: 20rem;
+    padding: var(--space-sm);
     border-radius: 20px;
-    transform: translateY(27px);
+    box-shadow: 0px 20px 30px #cbd4df;
 }
 
 .qr_code {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 1.26rem;
 }
 
-h1 {
+.container h1 {
     font-size: 22px;
-    font-weight: 700;
     line-height: 1.2;
     color: hsl(218, 44%, 22%);
-    margin-bottom: 17px;
+    margin-bottom: var(--space-sm);
 }
 
-span {
-    display: block;
+.container p {
     font-size: 15px;
     line-height: 1.4;
     letter-spacing: 0.2px;
     color: hsl(216, 15%, 48%);
-    margin: 0 8px;
+    margin: 0 1rem 1.5rem 1rem;
 }
